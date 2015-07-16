@@ -17,8 +17,8 @@ var userSchema = new mongoose.Schema({
 
 var User = mongoose.model("User", userSchema);
 
-User.create({ email: 'test1@test.com', searchTerms: [{ term: 'angularjs' }, { term: 'reactjs' }] });
-User.create({ email: 'test2@test.com', searchTerms: [{ term: 'heroin' }, { term: 'cocaine' }] });
+// User.create({ email: 'test1@test.com', searchTerms: [{ term: 'bacon' }, { term: 'eggs' }] });
+// User.create({ email: 'test2@test.com', searchTerms: [{ term: 'football' }, { term: 'basketball' }] });
 
 var T = new Twit({
   consumer_key: process.env.CONSUMER_KEY,
